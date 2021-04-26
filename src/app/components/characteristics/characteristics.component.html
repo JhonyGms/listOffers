@@ -1,0 +1,8 @@
+<h3>Caracteristicas</h3>
+<div *ngIf="ids;">
+    <div class="input-group mb-3" *ngFor="let items of ids.versions[0].characteristics; let id = index;">
+        <input type="text" class="form-control" placeholder="{{items.versions[0].name}}"
+            aria-label="Recipient's username" style="background-color: white;" aria-describedby="basic-addon2" disabled>
+    </div>
+
+</div>
